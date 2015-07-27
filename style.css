@@ -1,0 +1,20 @@
+table, td, th {
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 50px;
+
+}
+
+th {
+	color: black;
+	font-size: 150%;
+	background-color: yellow;
+}
+
+img {
+	height: 300px;
+	width: 300px;
+}
+
+
+
