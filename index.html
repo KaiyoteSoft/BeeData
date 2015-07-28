@@ -1,62 +1,188 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css"></link>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-	<script src="us_beedata.js"></script>
-	<script src="parser.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Page Wonder - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" -->
+    <!-- <link rel="stylesheet" href="style.css"></link> -->
+    
+    <!-- Custom CSS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="us_beedata.js"></script>
+    <script src="parser.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"></link>
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-<div class="container">
-	<h1>Bee Data</h1>
-	<img src="bee.png"></img>
-	</br>
-	</br>
-	</br>
-	<p>This is where the new text will go</p>
-
-
                                             
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Bee Data
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a onclick="processData('Alabama')">Alabama</a></li>
-      <li><a onclick="processData('Alaska')">Alaska</a></li>
-      <li><a onclick="processData('Arizona')">Arizona</a></li>
-      <li><a onclick="processData('Arkansas')">Arkansas</a></li>
-      <li><a onclick="processData('California')">California</a></li>
-      <li><a onclick="processData('Colorodo')">Colorodo</a></li>
-      <li><a onclick="processData('Conneticut')">Conneticut</a></li>
-      <li><a onclick="processData('Deleware')">Deleware</a></li>
-      <li><a onclick="processData('District of Columbia')">District of Columbia</a></li>
-      <li><a onclick="processData('Florida')">Florida</a></li>
-      <li><a onclick="processData('Georgia')">Georgia</a></li>
-      <li><a onclick="processData('Hawaii')">Hawaii</a></li>
-      <li><a onclick="processData('Idaho')">Idaho</a></li>
-      <li><a onclick="processData('Illinois')">Illinois</a></li>
-      <li><a onclick="processData('Indiana')">Indiana</a></li>
-      <li><a onclick="processData('Iowa')">Iowa</a></li>
-      <li><a onclick="processData('Kansas')">Kansas</a></li>
-      <li><a onclick="processData('Kentucky')">Kentucky</a></li>
-      <li><a onclick="processData('Louisiana')">Louisiana</a></li>
-      <li><a onclick="processData('Maine')">Maine</a></li>
-      <li><a onclick="processData('Maryland')">Maryland</a></li>
-      <li><a onclick="processData('Massachusetts')">Massachusetts</a></li>
-      <li><a onclick="processData('Michigan')">Michigan</a></li>
-      <li><a onclick="processData('Minnesota')">Minnesota</a></li>
-      <li><a onclick="processData('Mississippi')">Mississippi</a></li>
-      
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Discover</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">Goal 1</a>
+                    </li>
+                    <li>
+                        <a href="#services">Goal 2</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Goal 3</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-	</div>
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container backHeadline">
+                <h1 id="title">50 percent of bees are dead</h1>
+                <h3>But you can save the rest without leaving your desk</h3>
+            </div>
 
-	<br>
-	
-	<p id="beeTable"><p>
-	<div id="test"></div>
+<!--     // this is where the dropdown menu is handled -->
+        <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle btn-large" type="button" data-toggle="dropdown">Discover the bees plight
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Information by state</li>
+                <li><a onclick="processData('Alabama')">Alabama</a></li>
+                <li><a onclick="processData('Alaska')">Alaska</a></li>
+                <li><a onclick="processData('Arizona')">Arizona</a></li>
+                <li><a onclick="processData('Arkansas')">Arkansas</a></li>
+                <li><a onclick="processData('California')">California</a></li>
+                <li><a onclick="processData('Colorodo')">Colorodo</a></li>
+                <li><a onclick="processData('Connecticut')">Connecticut</a></li>
+                <li><a onclick="processData('Delaware')">Delaware</a></li>
+                <li><a onclick="processData('District of Columbia')">District of Columbia</a></li>
+                <li><a onclick="processData('Florida')">Florida</a></li>
+                <li><a onclick="processData('Georgia')">Georgia</a></li>
+                <li><a onclick="processData('Hawaii')">Hawaii</a></li>
+                <li><a onclick="processData('Idaho')">Idaho</a></li>
+                <li><a onclick="processData('Illinois')">Illinois</a></li>
+                <li><a onclick="processData('Indiana')">Indiana</a></li>
+                <li><a onclick="processData('Iowa')">Iowa</a></li>
+                <li><a onclick="processData('Kansas')">Kansas</a></li>
+                <li><a onclick="processData('Kentucky')">Kentucky</a></li>
+                <li><a onclick="processData('Louisiana')">Louisiana</a></li>
+                <li><a onclick="processData('Maine')">Maine</a></li>
+                <li><a onclick="processData('Maryland')">Maryland</a></li>
+                <li><a onclick="processData('Massachusetts')">Massachusetts</a></li>
+                <li><a onclick="processData('Michigan')">Michigan</a></li>
+                <li><a onclick="processData('Minnesota')">Minnesota</a></li>
+                <li><a onclick="processData('Mississippi')">Mississippi</a></li>
+            </ul>
+            </div>
+        </div>
+    </header>            
 
-</div>
+    <p id="beeTable"><p>
+
+    <!-- Page Content -->
+ 
+        <hr class="featurette-divider">
+
+ 
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right imageSpacingRight" src="img/Honey-Bee2.jpg">
+            <span class="headerSpacing">
+            <h2 class="featurette-heading headerSpacingLeft">An Urgent Problem: 
+                <span class="text-muted">Action is Needed</span>
+            </h2>
+
+            <p class="lead headerSpacingLeft">Humans created an urgent global problem. Bee colonies around the world are collapsing. We don't know the reason for the problem. Meanwhile the declining population had created alarming agricultural issues. One-third of all food is a direct result of bee pollination. Without these essential pollinators world hunger is imminent.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="services">
+            <img class="featurette-image img-circle img-responsive pull-left imageSpacingLeft" src="img/fruit.jpg">
+            <span class="headerSpacing">
+            <h2 class="featurette-heading">Help
+            </span>
+                <span class="text-muted">is on the way</span>
+            </h2>
+            <p class="lead">By simply providing data on bee populations around the world you give these amazing creatures a chance at survival. By comparing factors such as plant diversity, pesticide treatment, bee parasites and viruses between a healthy group of bees and a declining population, we may be able to understand the problem. To start on our mission we need you to contribute some data. Luckily the <a href="http://restlet.com/technical-resources/apispark/tutorials/create-web-api">REST API</a> makes this a simple task.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette" id="contact">
+            <img class="featurette-image img-circle img-responsive pull-right imageSpacingRight" src="img/restlet.jpg">
+            <h2 class="featurette-heading headerSpacingLeft">Open Bee Data: 
+                <span class="text-muted">Contribute and Distribute</span>
+            </h2>
+            <p class="lead headerSpacingLeft">Use our <a href="http://restlet.com/products/apispark/">REST API</a> to distribute Open Bee Data in new ways. Contribute data sources or come up with new ideas on how we can represent the data.</p>
+        </div>
+
+        <hr class="featurette-divider"  class="footer">
+
+        <!-- Footer -->
+        <footer>
+            <div class="row" id="footer">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; KaiyoteSoft Development Team 2015</p>
+                    <p>No rights reserved. JUST SAVE THE BEES</p>
+                    <p>For more information email <a href="https://www.linkedin.com/in/craigoda">Craig Oda</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
