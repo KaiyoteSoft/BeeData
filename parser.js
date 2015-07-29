@@ -1,7 +1,7 @@
 function processData(state) {
 	var jdata;
 	jQuery.ajax({
-		url: "https://bees.apispark.net/v1/data/",
+		url: "https://bee.apispark.net/v1/data/",
 		type: "GET",
 		contentType: 'application/json; charset=utf-8',
 		success: function(resultData) {
