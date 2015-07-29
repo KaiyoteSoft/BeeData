@@ -23,7 +23,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/one-page-wonder.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"></link>
@@ -82,94 +82,179 @@
                 <h3>But you can save the rest without leaving your desk</h3>
             </div>
 
-<!--     // this is where the dropdown menu is handled -->
-        <div class="btn-group">
-              <button class="btn btn-primary dropdown-toggle btn-large" type="button" data-toggle="dropdown">Discover the bees plight
-              <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Information by state</li>
-                <li><a onclick="processData('Alabama')">Alabama</a></li>
-                <li><a onclick="processData('Alaska')">Alaska</a></li>
-                <li><a onclick="processData('Arizona')">Arizona</a></li>
-                <li><a onclick="processData('Arkansas')">Arkansas</a></li>
-                <li><a onclick="processData('California')">California</a></li>
-                <li><a onclick="processData('Colorado')">Colorado</a></li>
-                <li><a onclick="processData('Connecticut')">Connecticut</a></li>
-                <li><a onclick="processData('Delaware')">Delaware</a></li>
-                <li><a onclick="processData('District of Columbia')">District of Columbia</a></li>
-                <li><a onclick="processData('Florida')">Florida</a></li>
-                <li><a onclick="processData('Georgia')">Georgia</a></li>
-                <li><a onclick="processData('Hawaii')">Hawaii</a></li>
-                <li><a onclick="processData('Idaho')">Idaho</a></li>
-                <li><a onclick="processData('Illinois')">Illinois</a></li>
-                <li><a onclick="processData('Indiana')">Indiana</a></li>
-                <li><a onclick="processData('Iowa')">Iowa</a></li>
-                <li><a onclick="processData('Kansas')">Kansas</a></li>
-                <li><a onclick="processData('Kentucky')">Kentucky</a></li>
-                <li><a onclick="processData('Louisiana')">Louisiana</a></li>
-                <li><a onclick="processData('Maine')">Maine</a></li>
-                <li><a onclick="processData('Maryland')">Maryland</a></li>
-                <li><a onclick="processData('Massachusetts')">Massachusetts</a></li>
-                <li><a onclick="processData('Michigan')">Michigan</a></li>
-                <li><a onclick="processData('Minnesota')">Minnesota</a></li>
-                <li><a onclick="processData('Mississippi')">Mississippi</a></li>
-            </ul>
-            </div>
+
+        <button type="button" class="btn btn-large btn-primary">
+        <a class="btn btn-large btn-info" href='#table'>Discover the bees plight</a>
+        </button>
+
         </div>
     </header>            
 
-    <p id="beeTable"><p>
+
+<!-- This is where the content for the data table goes -->
+     <hr class="featurette-divider">
+
+ <div class="featurette" id="table">
+               </br>
+            </br>
+            </br>
+            </br>
+            <img class="featurette-image img-circle img-responsive pull-right" src="img/bee_decline.jpg">
+            <h2 class="featurette-heading">Analyze
+                <span class="text-muted">Find new correlations</span>
+            </h2>
+            <p class="lead">Select a US State from the dropdown menu and see the data.  What are the similarities?  Why are states different?</p>
+            <div class='row'>
+                <div class='col-md-3'>
+                    <div class="dropdown" >
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                         Analyze Bees by State A-H
+                         <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Alabama')">Alabama</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Alaska')">Alaska</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Arizona')">Arizona</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Arkansas')">Arkansas</a></li>                  
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('California')">California</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Colorado')">Colorado</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Connecticut')">Connecticut</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Delaware')">Delaware</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('District_of_Columbia')">District of Columbia</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Florida')">Florida</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Georgia')">Georgia</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Hawaii')">Hawaii</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Idaho')">Idaho</a></li>
+                            </ul>
+                    </div>
+                </div>
+        <div class='col-md-3'>
+            <div class="dropdown" >
+                <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                    Analyze Bees by State I-M
+                    <span class="caret"></span></button>
+                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Illinois')">Illinois</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Indiana')">Indiana</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Iowa')">Iowa</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Kansas')">Kansas</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Kentucky')">Kentucky</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Louisiana')">Louisiana</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Maine')">Maine</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Maryland')">Maryland</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Massachusetts')">Massachusetts</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Michigan')">Michigan</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Minnesota')">Minnesota</a></li>
+                          
+                         </ul>
+            </div>
+        </div>
+           <div class='col-md-3'>
+            <div class="dropdown" >
+                <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                    Analyze Bees by State N-S
+                    <span class="caret"></span></button>
+                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Mississippi')">Mississippi</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Missouri')">Missouri</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Montana')">Montana</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Nebraska')">Nebraska</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Nevada')">Nevada</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('New_Hampshire')">New Hampshire</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('New_Jersey')">New Jersey</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('New_Mexico')">New Mexico</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('New_York')">New York</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('North_Carolina')">North Carolina</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('North_Dakota')">North Dakota</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Ohio')">Ohio</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Oklahoma')">Oklahoma</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Oregon')">Oregon</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Pennsylvania')">Pennsylvania</a></li>
+                            <!-- <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Puerto Rico')">Puerto Rico</a></li> -->
+                            
+                         </ul>
+            </div>
+        </div>
+           
+
+        <div class='col-md-3'>
+            <div class="dropdown" >
+                <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                    Analyze Bees by State T-Z
+                    <span class="caret"></span></button>
+                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Rhode_Island')">Rhode Island</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('South_Carolina')">South Carolina</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('South_Dakota')">South Dakota</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Tennessee')">Tennessee</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Texas')">Texas</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Utah')">Utah</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Vermont')">Vermont</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Virginia')">Virginia</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Washington')">Washington</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('West_Virginia')">West Virginia</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Wisconsin')">Wisconsin</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" onClick="processData('Wyoming')">Wyoming</a></li>
+                         </ul>
+            </div>
+        </div>   
+           
+
+    </div>            
+        <p id="beeTable"></p>
+  </div>
 
     <!-- Page Content -->
- 
+        <br>
+        <br>
+        <br>
         <hr class="featurette-divider">
 
 
-        <!-- First Featurette -->
+        <!-- Second Featurette -->
         <div class="featurette" id="about">
         <br>
         <br>
         <br>
         <br>
-            <img class="featurette-image img-circle img-responsive pull-right imageSpacingRight" src="img/Honey-Bee2.jpg">
+            <img class="featurette-image img-circle img-responsive pull-left imageSpacingLeft" src="img/Honey-Bee2.jpg">
             <span class="headerSpacing">
             <h2 class="featurette-heading headerSpacingLeft">An Urgent Problem: 
                 <span class="text-muted">Action is Needed</span>
             </h2>
 
-            <p class="lead headerSpacingLeft">Humans created an urgent global problem. Bee colonies around the world are collapsing. We don't know the reason for the problem. Meanwhile the declining population had created alarming agricultural issues. One-third of all food is a direct result of bee pollination. Without these essential pollinators world hunger is imminent.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-        <br>
-        <br>
-        <br>
-        <br>
-            <img class="featurette-image img-circle img-responsive pull-left imageSpacingLeft" src="img/fruit.jpg">
-            <span class="headerSpacing">
-            <h2 class="featurette-heading">Help
-            </span>
-                <span class="text-muted">is on the way</span>
-            </h2>
-            <p class="lead">By simply providing data on bee populations around the world you give these amazing creatures a chance at survival. By comparing factors such as plant diversity, pesticide treatment, bee parasites and viruses between a healthy group of bees and a declining population, we may be able to understand the problem. To start on our mission we need you to contribute some data. Luckily the <a href="http://restlet.com/technical-resources/apispark/tutorials/create-web-api">REST API</a> makes this a simple task.</p>
+            <p class="lead">Humans created an urgent global problem. Bee colonies around the world are collapsing. We don't know the reason for the problem. Meanwhile the declining population had created alarming agricultural issues. One-third of all food is a direct result of bee pollination. Without these essential pollinators world hunger is imminent.</p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Third Featurette -->
+        <div class="featurette" id="services">
+        <br>
+        <br>
+        <br>
+        <br>
+            <img class="featurette-image img-circle img-responsive pull-right imageSpacingRight" src="img/fruit.jpg">
+            <span class="headerSpacing">
+            <h2 class="featurette-heading">Help
+            </span>
+                <span class="text-muted">is on the way</span>
+            </h2>
+            <p class="lead headerSpacingLeft">By simply providing data on bee populations around the world you give these amazing creatures a chance at survival. By comparing factors such as plant diversity, pesticide treatment, bee parasites and viruses between a healthy group of bees and a declining population, we may be able to understand the problem. To start on our mission we need you to contribute some data. Luckily the <a href="http://restlet.com/technical-resources/apispark/tutorials/create-web-api">REST API</a> makes this a simple task.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Fourth Featurette -->
         <div class="featurette" id="contact">
         <br>
         <br>
         <br>
         <br>
-            <img class="featurette-image img-circle img-responsive pull-right imageSpacingRight" src="img/restlet.jpg">
+            <img class="featurette-image img-circle img-responsive pull-left imageSpacingLeft" src="img/restlet.jpg">
             <h2 class="featurette-heading headerSpacingLeft">Open Bee Data: 
                 <span class="text-muted">Contribute and Distribute</span>
             </h2>
-            <p class="lead headerSpacingLeft">Use our <a href="http://restlet.com/products/apispark/">REST API</a> to distribute Open Bee Data in new ways. Contribute data sources or come up with new ideas on how we can represent the data.</p>
+            <p class="lead">Use our <a href="http://restlet.com/products/apispark/">REST API</a> to distribute Open Bee Data in new ways. Contribute data sources or come up with new ideas on how we can represent the data.</p>
         </div>
 
         <hr class="featurette-divider"  class="footer">

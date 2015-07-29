@@ -6,6 +6,10 @@ body {
 	font-family: 'Oswald', sans-serif;
 }
 
+/*.dataButton {
+	margin-bottom: 100px;
+}*/
+
 table, td, th {
 	border: 2px solid black;
 	padding: 20px;
@@ -16,7 +20,7 @@ table, td, th {
 th {
 	color: black;
 	font-size: 150%;
-	background-color: yellow;
+	background-color: #ecbc00;
 }
 
 img {
@@ -24,10 +28,21 @@ img {
 	width: 300px;
 }
 
+.buttonSpacing {
+	margin-left: 50px;
+}
+
+.buttonSpacing2 {
+	margin-left: 400px;
+	margin-top: -300px;
+}
+
 #beeTable {
-	margin-left: auto;
+	margin-left: auto - 300;
 	margin-right: auto;
 	width: 800px;
+	margin-top: -150px;
+	margin-bottom: 155px;
 }
 
 .headerSpacingLeft {

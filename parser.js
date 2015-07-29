@@ -1,7 +1,8 @@
 function processData(state) {
 	var jdata;
+	var state_name = state
 	jQuery.ajax({
-		url: "https://bee.apispark.net/v1/data/",
+		url: "https://bee.apispark.net/v1/data/?state=" + state_name,
 		type: "GET",
 		contentType: 'application/json; charset=utf-8',
 		success: function(resultData) {
@@ -13,6 +14,7 @@ function processData(state) {
 		state_name = state;
 		for (i; i < jdata.length; i++){
 			if (jdata[i].state == state_name) {
+				var stateData = state.replace(/_/g, " ");
 				var colonies = jdata[i].colonies;
 				var loss = jdata[i].loss;
 			}
@@ -20,7 +22,7 @@ function processData(state) {
 
 		var tabledata = "<table> <tr>" + 
 		 "<th>State</th> <th>Number of bee colonies</th> <th>Percentage of colonies lost</th> </tr>" +
-		 "<tr> <td>" + state +  "</td>" + 
+		 "<tr> <td>" + stateData +  "</td>" + 
 		 "<td>" + colonies + "</td> <td>" + loss + "</td> </tr>" + 
 		 " </table>";
 
